@@ -1,0 +1,4 @@
+---- networkParams Matches (3 in 0 files) ----
+Blink.c (c:\users\administrator\desktop\linux_andriod竞赛\zigbee\文献\bitcloud_megarf_1_14_0\bitcloud_megarf_1_14_0\applications\blink_coordinator\src):static ZDO_StartNetworkReq_t networkParams;
+Blink.c (c:\users\administrator\desktop\linux_andriod竞赛\zigbee\文献\bitcloud_megarf_1_14_0\bitcloud_megarf_1_14_0\applications\blink_coordinator\src):	networkParams.ZDO_StartNetworkConf=ZDO_StartNetworkConf;
+Blink.c (c:\users\administrator\desktop\linux_andriod竞赛\zigbee\文献\bitcloud_megarf_1_14_0\bitcloud_megarf_1_14_0\applications\blink_coordinator\src):	ZDO_StartNetworkReq(&networkParams);

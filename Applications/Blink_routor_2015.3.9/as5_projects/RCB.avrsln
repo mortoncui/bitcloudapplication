@@ -1,0 +1,50 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{D1100916-62DA-4D80-A9B4-55A1E7CCEEB3}") = "RCB", "RCB.avrgccproj", "{2B4CE508-4970-455F-A746-55FDCD7594EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		All_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR = All_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		Coordinator_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR = Coordinator_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		Router_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR = Router_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		EndDevice_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR = EndDevice_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		All_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR = All_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		Coordinator_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR = Coordinator_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		Router_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR = Router_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		EndDevice_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR = EndDevice_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		All_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR = All_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		Coordinator_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR = Coordinator_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		Router_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR = Router_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		EndDevice_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR = EndDevice_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		Description = Application Blink
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.All_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.ActiveCfg = All_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.All_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.Build.0 = All_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.Coordinator_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.ActiveCfg = Coordinator_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.Coordinator_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.Build.0 = Coordinator_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.Router_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.ActiveCfg = Router_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.Router_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.Build.0 = Router_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.EndDevice_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.ActiveCfg = EndDevice_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.EndDevice_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.Build.0 = EndDevice_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.All_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.ActiveCfg = All_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.All_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.Build.0 = All_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.Coordinator_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.ActiveCfg = Coordinator_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.Coordinator_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.Build.0 = Coordinator_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.Router_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.ActiveCfg = Router_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.Router_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.Build.0 = Router_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.EndDevice_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.ActiveCfg = EndDevice_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.EndDevice_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.Build.0 = EndDevice_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.All_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.ActiveCfg = All_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.All_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.Build.0 = All_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.Coordinator_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.ActiveCfg = Coordinator_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.Coordinator_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.Build.0 = Coordinator_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.Router_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.ActiveCfg = Router_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.Router_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.Build.0 = Router_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.EndDevice_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.ActiveCfg = EndDevice_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+		{2B4CE508-4970-455F-A746-55FDCD7594EE}.EndDevice_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR.Build.0 = EndDevice_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

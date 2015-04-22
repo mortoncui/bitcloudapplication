@@ -1,0 +1,87 @@
+APP_NAME = Blink
+PROJECT_NAME = STK600_OTA
+CONFIG_NAME = All_Stk600_Atmega128rfa1_8Mhz_Gcc
+
+#PROJECT_NAME = STK600_OTA
+#CONFIG_NAME = All_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = Coordinator_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = Router_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = EndDevice_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = All_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = Coordinator_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = Router_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = EndDevice_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = All_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = Coordinator_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = Router_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = EndDevice_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = All_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = Coordinator_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = Router_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = EndDevice_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = All_Sec_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = Coordinator_Sec_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = Router_Sec_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = EndDevice_Sec_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = All_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = Coordinator_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = Router_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = EndDevice_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Iar
+
+#PROJECT_NAME = STK600
+#CONFIG_NAME = All_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = Coordinator_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = Router_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = EndDevice_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = All_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = Coordinator_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = Router_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = EndDevice_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = All_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = Coordinator_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = Router_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = EndDevice_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = All_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = Coordinator_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = Router_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = EndDevice_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = All_Sec_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = Coordinator_Sec_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = Router_Sec_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = EndDevice_Sec_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = All_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = Coordinator_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = Router_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = EndDevice_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Iar
+
+#PROJECT_NAME = RCB
+#CONFIG_NAME = All_Rcb_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = Coordinator_Rcb_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = Router_Rcb_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = EndDevice_Rcb_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = All_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = Coordinator_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = Router_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = EndDevice_Sec_Rcb_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = All_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = Coordinator_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = Router_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = EndDevice_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Gcc
+#CONFIG_NAME = All_Rcb_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = Coordinator_Rcb_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = Router_Rcb_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = EndDevice_Rcb_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = All_Sec_Rcb_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = Coordinator_Sec_Rcb_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = Router_Sec_Rcb_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = EndDevice_Sec_Rcb_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = All_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = Coordinator_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = Router_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Iar
+#CONFIG_NAME = EndDevice_StdlinkSec_Rcb_Atmega128rfa1_8Mhz_Iar
+
+all:
+	make -C makefiles/$(PROJECT_NAME) -f Makefile_$(CONFIG_NAME) all APP_NAME=$(APP_NAME)
+
+clean:
+	make -C makefiles/$(PROJECT_NAME) -f Makefile_$(CONFIG_NAME) clean APP_NAME=$(APP_NAME)

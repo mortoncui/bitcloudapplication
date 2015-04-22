@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>5.0</ProjectVersion>
+    <ProjectGuid>{4f5c3073-f9a8-4946-89bf-a30601e58d79}</ProjectGuid>
+    <avrdevice>Atmega128rfa1</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFile>Blink.elf</OutputFile>
+    <UseGlobalToolchain>False</UseGlobalToolchain>
+    <avrtoolinterface />
+  </PropertyGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\Vs\AvrGCC.targets" />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600_OTA\All_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600_OTA\Makefile_All_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\Blink.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Coordinator_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600_OTA\Coordinator_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600_OTA\Makefile_Coordinator_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\Blink.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Router_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600_OTA\Router_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600_OTA\Makefile_Router_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\Blink.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'EndDevice_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600_OTA\EndDevice_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600_OTA\Makefile_EndDevice_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\Blink.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'All_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600_OTA\All_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600_OTA\Makefile_All_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\Blink.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Coordinator_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600_OTA\Coordinator_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600_OTA\Makefile_Coordinator_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\Blink.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Router_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600_OTA\Router_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600_OTA\Makefile_Router_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\Blink.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'EndDevice_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600_OTA\EndDevice_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600_OTA\Makefile_EndDevice_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\Blink.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'All_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600_OTA\All_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600_OTA\Makefile_All_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\Blink.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Coordinator_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600_OTA\Coordinator_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600_OTA\Makefile_Coordinator_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\Blink.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Router_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600_OTA\Router_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600_OTA\Makefile_Router_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\Blink.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'EndDevice_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600_OTA\EndDevice_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600_OTA\Makefile_EndDevice_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\Blink.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include=".\..\src\blink.c">
+      <SubType>compile</SubType>
+      <Link>src\blink.c</Link>
+    </Compile>
+    <Compile Include=".\..\include\blink.h">
+      <SubType>compile</SubType>
+      <Link>include\blink.h</Link>
+    </Compile>
+    <Compile Include=".\..\configuration.h">
+      <SubType>compile</SubType>
+      <Link>configuration\configuration.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\src\pdsMem.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\src\pdsMem.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\src\pdsWriteData.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\src\pdsWriteData.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\src\pdsDataServer.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\src\pdsDataServer.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\src\pdsInit.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\src\pdsInit.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\src\pdsTimer.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\src\pdsTimer.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\src\pdsEvents.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\src\pdsEvents.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\src\pdsMemAccess.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\src\pdsMemAccess.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\src\pdsCrcService.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\src\pdsCrcService.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\include\private\pdsDbg.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\include\private\pdsDbg.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\include\private\pdsMemAccess.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\include\private\pdsMemAccess.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\include\private\pdsCrcService.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\include\private\pdsCrcService.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\include\private\pdsTimer.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\include\private\pdsTimer.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\include\private\pdsMem.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\include\private\pdsMem.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\include\private\pdsWriteData.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\include\private\pdsWriteData.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\include\private\pdsMemAbstract.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\include\private\pdsMemAbstract.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\include\pdsDataServer.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\include\pdsDataServer.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\HAL\drivers\ISD\src\isdImageStorage.c">
+      <SubType>compile</SubType>
+      <Link>Components\ISD\src\isdImageStorage.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\ATML_STK600\src\fakeBSP.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\src\fakeBSP.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\ATML_STK600\src\buttons.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\src\buttons.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\ATML_STK600\src\leds.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\src\leds.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\ATML_STK600\src\bspTaskManager.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\src\bspTaskManager.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\HAL\drivers\OFD\src\ofdCommand.c">
+      <SubType>compile</SubType>
+      <Link>Components\OFD\src\ofdCommand.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\HAL\drivers\OFD\src\ofdIntFlashRead.s">
+      <SubType>compile</SubType>
+      <Link>Components\OFD\src\ofdIntFlashRead.s</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\HAL\drivers\OFD\src\ofdAt45dbDriver.c">
+      <SubType>compile</SubType>
+      <Link>Components\OFD\src\ofdAt45dbDriver.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\HAL\drivers\OFD\src\ofdSpiSerializer.c">
+      <SubType>compile</SubType>
+      <Link>Components\OFD\src\ofdSpiSerializer.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\HAL\drivers\OFD\src\ofdFakeDriver.c">
+      <SubType>compile</SubType>
+      <Link>Components\OFD\src\ofdFakeDriver.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\HAL\drivers\OFD\src\ofdCrcService.c">
+      <SubType>compile</SubType>
+      <Link>Components\OFD\src\ofdCrcService.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\HAL\drivers\OFD\src\ofdAt25Driver.c">
+      <SubType>compile</SubType>
+      <Link>Components\OFD\src\ofdAt25Driver.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\src\csPersistentMem.c">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\src\csPersistentMem.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\src\csMem.c">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\src\csMem.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\src\configServer.c">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\src\configServer.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csParamTable.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\private\csParamTable.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csDbg.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\private\csDbg.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csBuffers.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\private\csBuffers.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csSIB.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\private\csSIB.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\csDefaulfts.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\csDefaulfts.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\configServer.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\configServer.h</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\" />
+    <Folder Include="Components\BSP\" />
+    <Folder Include="Components\ConfigServer\" />
+    <Folder Include="Components\ISD\" />
+    <Folder Include="Components\ISD\src" />
+    <Folder Include="Components\OFD\" />
+    <Folder Include="Components\PersistDataServer\" />
+    <Folder Include="src" />
+    <Folder Include="Components\ConfigServer\src" />
+    <Folder Include="configuration" />
+    <Folder Include="Components\ConfigServer\include\private" />
+    <Folder Include="Components\OFD\src" />
+    <Folder Include="Components\BSP\src" />
+    <Folder Include="Components\PersistDataServer\src" />
+    <Folder Include="Components\PersistDataServer\include\private" />
+    <Folder Include="Components\ConfigServer\include" />
+    <Folder Include="Components\PersistDataServer\include" />
+    <Folder Include="include" />
+  </ItemGroup>
+</Project>

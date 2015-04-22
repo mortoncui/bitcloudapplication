@@ -1,0 +1,146 @@
+COMPONENTS_PATH = ./../../../../BitCloud/Components
+APP_NAME = Blink
+CONFIG_NAME = EndDevice_Sec_Rcb_Atmega128rfa1_8Mhz_Iar
+LIST_PATH = $(CONFIG_NAME)/List
+EXE_PATH = $(CONFIG_NAME)/Exe
+OBJ_PATH = $(CONFIG_NAME)/Obj
+
+include ./../../../../BitCloud/lib/Makerules_Atmega128rfa1_Iar
+
+DEFINES = \
+  -DATMEGA128RFA1 \
+  -DHAL_8MHz \
+  -DBOARD_RCB \
+  -DRCB_ATMEGA128RFA1 \
+  -DSTANDARD_SECURITY_MODE \
+  -DSTACK_TYPE_ENDDEVICE 
+
+INCLUDES = \
+  -I./../.. \
+  -I./../../include \
+  -I./../../../../BitCloud/Components/BSP/RCB/include \
+  -I./../../../../BitCloud/lib \
+  -I./../../../../BitCloud/Components/HAL/include \
+  -I./../../../../BitCloud/Components/BSP \
+  -I./../../../../BitCloud/Components/BSP/include \
+  -I./../../../../BitCloud/Components/NWK/include \
+  -I./../../../../BitCloud/Components/NWK/include/private \
+  -I./../../../../BitCloud/Components/ZDO/include \
+  -I./../../../../BitCloud/Components/ZDO/include/private \
+  -I./../../../../BitCloud/Components/APS/include \
+  -I./../../../../BitCloud/Components/APS/include/private \
+  -I./../../../../BitCloud/Components/SystemEnvironment/include \
+  -I./../../../../BitCloud/Components/ConfigServer/include \
+  -I./../../../../BitCloud/Components/ConfigServer/include/private \
+  -I./../../../../BitCloud/Components/PersistDataServer/include \
+  -I./../../../../BitCloud/Components/PersistDataServer/include/private \
+  -I./../../../../BitCloud/Components/Security/TrustCentre/include \
+  -I./../../../../BitCloud/Components/Security/ServiceProvider/include \
+  -I./../../../../BitCloud/Components/HAL/drivers/include \
+  -I./../../../../BitCloud/Components/HAL/drivers/USBFIFO/include \
+  -I./../../../../BitCloud/Components/HAL/avr/atmega128rfa1/common/include \
+  -I./../../../../BitCloud/Components/MAC_PHY/include \
+  -I./../../../../BitCloud/Components/MAC_PHY/MAC_ENV/include \
+  -I./../../../../BitCloud/Components/MAC_PHY/MAC_HWI/include \
+  -I./../../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include \
+  -I./../../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/ATMEGA128RFA1/PHY/include \
+  -I./../../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/ATMEGA128RFA1/MAC_HWD/include 
+
+LIBS = \
+  ./../../../../BitCloud/lib/libHAL_RcbAtm128rfa1_Atmega128rfa1_8Mhz_Iar.a \
+  ./../../../../BitCloud/lib/libBc_EndDevice_Sec_Atmega128rfa1_Atmega128rfa1_Iar.a \
+  ./../../../../BitCloud/lib/WdtInitatmega128rfa1_Iar.o 
+
+SRCS = \
+  ./../../src/blink.c \
+  ./../../../../BitCloud/Components/PersistDataServer/src/pdsMem.c \
+  ./../../../../BitCloud/Components/PersistDataServer/src/pdsWriteData.c \
+  ./../../../../BitCloud/Components/PersistDataServer/src/pdsDataServer.c \
+  ./../../../../BitCloud/Components/PersistDataServer/src/pdsInit.c \
+  ./../../../../BitCloud/Components/PersistDataServer/src/pdsTimer.c \
+  ./../../../../BitCloud/Components/PersistDataServer/src/pdsEvents.c \
+  ./../../../../BitCloud/Components/PersistDataServer/src/pdsMemAccess.c \
+  ./../../../../BitCloud/Components/PersistDataServer/src/pdsCrcService.c \
+  ./../../../../BitCloud/Components/HAL/drivers/USBFIFO/src/usbFifoVirtualUsart.c \
+  ./../../../../BitCloud/Components/HAL/drivers/USBFIFO/src/usbFifoFT245RL.c \
+  ./../../../../BitCloud/Components/BSP/RCB/src/leds.c \
+  ./../../../../BitCloud/Components/BSP/RCB/src/bspTaskManager.c \
+  ./../../../../BitCloud/Components/BSP/RCB/src/buttons.c \
+  ./../../../../BitCloud/Components/BSP/RCB/src/fakeBSP.c \
+  ./../../../../BitCloud/Components/ConfigServer/src/csPersistentMem.c \
+  ./../../../../BitCloud/Components/ConfigServer/src/csMem.c \
+  ./../../../../BitCloud/Components/ConfigServer/src/configServer.c 
+
+PREINCLUDE = MakerulesBc_EndDevice_Sec_Atmega128rfa1_Atmega128rfa1_Iar.h
+
+CSRCS = $(filter %.c, $(SRCS))
+OBJS = $(addprefix $(OBJ_PATH)/, $(notdir %/$(subst .c,.o,$(CSRCS))))
+
+ASM_FILE_EXT = s90
+
+ifneq (, $(findstring .$(ASM_FILE_EXT), $(SRCS)))
+  ASRCS = $(filter %.$(ASM_FILE_EXT), $(SRCS))
+  OBJS += $(addprefix $(OBJ_PATH)/, $(notdir %$(subst .$(ASM_FILE_EXT),.o,$(ASRCS))))
+endif
+
+CFLAGS += $(DEFINES)
+CFLAGS += $(INCLUDES)
+CFLAGS += --preinclude $(PREINCLUDE)
+
+ASFLAGS = $(INCLUDES)
+ASFLAGS  = -s+ # Enables case sensitivity.
+ASFLAGS += -w+ # Enables warnings.
+ASFLAGS += -M'<>'# Change asm.macro argument quote chars.
+ASFLAGS += -t8 # Set tab spacing.
+ASFLAGS += -u_enhancedCore
+ASFLAGS += -D__HAS_ENHANCED_CORE__=1
+ASFLAGS += -D__HAS_MUL__=1
+ASFLAGS += -D__MEMORY_MODEL__=2
+ASFLAGS += -D__HAS_ELPM__=1
+ASFLAGS += -S
+
+TMP_CFLAGS:=$(patsubst --library_module,,$(CFLAGS))
+CFLAGS = $(TMP_CFLAGS)
+ASFLAGS += -v3
+
+LINKER_FLAGS += -Fintel-extended
+LINKER_FLAGS += -l $(LIST_PATH)/$(APP_NAME).map
+LINKER_FLAGS += -xms
+LINKER_FLAGS += -S
+LINKER_FLAGS += -f ./../../linkerScr/cfgm128rfa1bitcloud.xcl
+LINKER_FLAGS += -e_PrintfSmall=_Printf
+LINKER_FLAGS_TAIL = -s __bitcloud_start $(IAR_PATH)/LIB/DLIB/dlAVR-3s-ec_mul-n.r90
+
+.PHONY: all directories clean size root_files images
+
+images: $(EXE_PATH)/$(APP_NAME).hex $(EXE_PATH)/$(APP_NAME).srec
+all: directories images root_files
+
+$(OBJ_PATH)/%.o: $(SRCS)
+	$(CC) $(CFLAGS) $(filter %/$(subst .o,.c,$(notdir $@)), $(SRCS)) -o $@
+
+$(OBJS): directories
+
+
+$(EXE_PATH)/$(APP_NAME).hex $(EXE_PATH)/$(APP_NAME).srec: $(OBJS)
+	$(LD) $(LINKER_FLAGS) $(OBJS) $(LIBS) -o $(EXE_PATH)/$(APP_NAME).hex -Omotorola-s28=$(EXE_PATH)/$(APP_NAME).srec $(LINKER_FLAGS_TAIL)
+
+
+root_files: images
+	cp -f $(EXE_PATH)/*.* ./../../
+
+clean:
+	rm -rf $(CONFIG_NAME) ./../../$(APP_NAME).hex ./../../$(APP_NAME).srec
+
+directories:
+	@"mkdir" -p $(LIST_PATH)
+	@"mkdir" -p $(EXE_PATH)
+	@"mkdir" -p $(OBJ_PATH)
+
+
+ifeq ($(MAKECMDGOALS), fresh)
+directories: clean
+endif
+fresh: all
+
+# eof Makefile

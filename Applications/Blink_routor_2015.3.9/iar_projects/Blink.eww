@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<workspace>
+  <batchBuild/>
+  <project>
+    <path>$WS_DIR$\STK600_OTA.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\STK600.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\RCB.ewp</path>
+  </project>
+</workspace>
